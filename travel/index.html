@@ -44,49 +44,56 @@
             <img src="assets/images/shinto.jpg" alt="Shinto Shrine"/>
             <img src="assets/images/fujisan.jpeg" alt="Mt Fuji San"/>
         </div>
-    </section>
-
     <section id="packages">
-        <h2>See the Packages</h2>
-        <div class="package-container">
-            <div class="package">
-                <h3>Tokyo Explorer</h3>
-                <p>5 Days, 4 Nights</p>
-                <p><strong>$999</strong></p>
-                <a href="#" class="btn">Book Now</a>
-            </div>
-            <div class="package">
-                <h3>Kyoto Heritage</h3>
-                <p>3 Days, 2 Nights</p>
-                <p><strong>$699</strong></p>
-                <a href="#" class="btn">Book Now</a>
-            </div>
-            <div class="package">
-                <h3>Nara Serenity</h3>
-                <p>4 Days, 3 Nights</p>
-                <p><strong>$799</strong></p>
-                <a href="#" class="btn">Book Now</a>
-            </div>
-            <div class="package">
-                <h3>Osaka Adventure</h3>
-                <p>6 Days, 5 Nights</p>
-                <p><strong>$1099</strong></p>
-                <a href="#" class="btn">Book Now</a>
-            </div>
-            <div class="package">
-                <h3>Mount Fuji Adventure</h3>
-                <p>7 Days, 6 Nights</p>
-                <p><strong>$1299</strong></p>
-                <a href="#" class="btn">Book Now</a>
-            </div>
-            <div class="package">
-                <h3>Kehi Shinto</h3>
-                <p>8 Days, 6 Nights</p>
-                <p><strong>$1500</strong></p>
-                <a href="#" class="btn">Book Now</a>
-            </div>
-        </div>
-    </section>
+  <h2>See the Packages</h2>
+  <div class="package-container">
+    <div class="package">
+      <h3>Tokyo Explorer</h3>
+      <p>5 Days, 4 Nights</p>
+      <p><strong>¥150,000</strong></p>
+      <a href="payment.html" class="btn" onclick="selectPackage('Tokyo Explorer', '¥150,000')">Book Now</a>
+    </div>
+    <div class="package">
+      <h3>Kyoto Heritage</h3>
+      <p>3 Days, 2 Nights</p>
+      <p><strong>¥120,000</strong></p>
+      <a href="payment.html" class="btn" onclick="selectPackage('Kyoto Heritage', '¥120,000')">Book Now</a>
+    </div>
+    <div class="package">
+      <h3>Nara Serenity</h3>
+      <p>4 Days, 3 Nights</p>
+      <p><strong>¥130,000</strong></p>
+      <a href="payment.html" class="btn" onclick="selectPackage('Nara Serenity', '¥130,000')">Book Now</a>
+    </div>
+    <div class="package">
+      <h3>Osaka Adventure</h3>
+      <p>6 Days, 5 Nights</p>
+      <p><strong>¥160,000</strong></p>
+      <a href="payment.html" class="btn" onclick="selectPackage('Osaka Adventure', '¥160,000')">Book Now</a>
+    </div>
+    <div class="package">
+      <h3>Mount Fuji Adventure</h3>
+      <p>7 Days, 6 Nights</p>
+      <p><strong>¥200,000</strong></p>
+      <a href="payment.html" class="btn" onclick="selectPackage('Mount Fuji Adventure', '¥200,000')">Book Now</a>
+    </div>
+    <div class="package">
+      <h3>Kehi Shinto</h3>
+      <p>8 Days, 6 Nights</p>
+      <p><strong>¥220,000</strong></p>
+      <a href="payment.html" class="btn" onclick="selectPackage('Kehi Shinto', '¥220,000')">Book Now</a>
+    </div>
+  </div>
+</section>
+
+<script>
+function selectPackage(name, price) {
+    localStorage.setItem('selectedPackage', name);
+    localStorage.setItem('selectedPrice', price);
+}
+</script>
+
+
 
     <section id="contact">
         <h2>Get in Touch</h2>
